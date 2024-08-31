@@ -1,10 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
-import MainLogo from "../assets/Logo.svg"
-import { Dashboardsvg, Communitysvg,Mentorsvg,BrowseVideosvg } from "../components/icons/Dashboardsvg";
+import MainLogo from "../assets/Logo.svg";
+import {
+  Dashboardsvg,
+  Communitysvg,
+  Mentorsvg,
+  BrowseVideosvg,
+} from "../components/icons/Dashboardsvg";
 
 const Navbar = () => {
-    let path= useLocation()
-    console.log(path.pathname)
+  let path = useLocation();
+  console.log(path);
   let navitems = [
     {
       label: "Dashboard",
@@ -24,12 +29,13 @@ const Navbar = () => {
     {
       label: "Browse Videos",
       link: "/browse-videos",
-      icon: BrowseVideosvg
+      icon: BrowseVideosvg,
     },
   ];
+
   return (
     <nav className="flex items-center gap-[64px] pt-[40px] pb-[33px] bg-[#021826] text-white">
-      <img src={MainLogo} alt="" className="pl-[40px]"/>
+      <img src={MainLogo} alt="" className="pl-[40px]" />
       <ul className="flex gap-[16px] ">
         {navitems.map((item, index) => {
           return (
