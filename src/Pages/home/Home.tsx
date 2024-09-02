@@ -2,7 +2,13 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div></div>
+    <div>
+<p>
+  Browse relevant Playlist
+</p>
+
+
+    </div>
   )
 }
 
