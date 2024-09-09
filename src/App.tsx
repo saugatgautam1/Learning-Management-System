@@ -3,6 +3,7 @@ import Home from "./Pages/home/Home";
 import Community from "./Pages/community/Community";
 import Navbar from "./commons/Navbar";
 import Footer from "./commons/Footer";
+import Dashboard from "./Pages/dashboard/Dashboard";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          
         </Routes>
       </main>
 
