@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home/Home";
 import Community from "./Pages/community/Community";
 import Navbar from "./commons/Navbar";
-import Footer from "./commons/Footer";
+
 import Dashboard from "./Pages/dashboard/Dashboard";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
         </Routes>
       </main>
 
-      <Footer />
+      
     </BrowserRouter>
   );
 };

@@ -12,9 +12,9 @@ const Dashboardcard = ({
   authorimg: string;
 }) => {
   return (
-    <div className="gap-[16px] flex flex-col w-min bg-white p-4 ml-[40px] border  border-black/20 rounded-lg">
-      <div className="h-[218px] w-[333px]">
-        <img src={image} className="h-full w-full object-cover rounded-[8px]" />{" "}
+    <div className="gap-[16px] flex flex-col w-full bg-white p-4  border border-black/20 rounded-lg">
+      <div className="h-[218px] w-full ">
+        <img src={image} className="h-full w-full object-cover rounded-[8px]" />
       </div>
 
       <div className="flex gap-4 ">

@@ -1,6 +1,8 @@
 // import React from 'react'
 import Heading from "../../commons/Heading";
 import Dashboardcard from "../../components/Dashboard/Dashboardcard";
+import icon from "../../assets/bgimg.svg";
+import Stayupdated from "../../components/Dashboard/Stayupdated";
 
 const Dashboard = () => {
   return (
@@ -15,14 +17,72 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex w-full gap-6  px-6 ">
         <Dashboardcard
           image="https://picsum.photos/200"
-          tags={["Photograpgy", "Photoshop","Art"]}
+          tags={["Photograpgy", "Photoshop", "Art"]}
           author="Saugat Gautam"
           authorimg="https://picsum.photos/200"
           title="Photograpghy"
         />
+        <Dashboardcard
+          image="https://picsum.photos/200"
+          tags={["Photograpgy", "Photoshop", "Art"]}
+          author="Saugat Gautam"
+          authorimg="https://picsum.photos/200"
+          title="Photograpghy"
+        />
+        <Dashboardcard
+          image="https://picsum.photos/200"
+          tags={["Photograpgy", "Photoshop", "Art"]}
+          author="Saugat Gautam"
+          authorimg="https://picsum.photos/200"
+          title="Photograpghy"
+        />
+        <Dashboardcard
+          image="https://picsum.photos/200"
+          tags={["Photograpgy", "Photoshop", "Art"]}
+          author="Saugat Gautam"
+          authorimg="https://picsum.photos/200"
+          title="Photograpghy"
+        />
+      </div>
+
+      <div>
+        <div className="ml-[40px]">
+          {" "}
+          <Heading
+            heading="Stay Updated"
+            subheading="Stay up to date with various alerts and notification"
+          />
+        </div>
+
+        <div className="bg-black/5 mx-10 gap-10 px-6 flex py-8">
+          <Stayupdated
+            image={icon}
+            heading="Live Session"
+            time="3:30PM - 4:20PM"
+            subheading="Craft a headline that is informative and will capture reader"
+          />
+          <Stayupdated
+            image={icon}
+            heading="Live Session"
+            time="3:30PM - 4:20PM"
+            subheading="Craft a headline that is informative and will capture reader"
+          />
+          <Stayupdated
+            image={icon}
+            heading="Live Session"
+            time="3:30PM - 4:20PM"
+            subheading="Craft a headline that is informative and will capture reader"
+          />
+          <Stayupdated
+            image={icon}
+            heading="Live Session"
+            time="3:30PM - 4:20PM"
+            subheading="Craft a headline that is informative and will capture reader"
+          />
+        </div>
       </div>
     </div>
   );
